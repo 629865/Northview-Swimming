@@ -1,0 +1,44 @@
+body {
+    background-color: yellow;
+    color: white;
+    margin: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+nav, article {
+    width: 100%;
+    padding: 15px;
+}
+
+header, footer {
+    background-color: black;
+    padding: 15px;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    flex: 20%;
+}
+
+nav a {
+    display: block;
+}
+
+a:hover{
+    background-color: red
+}
+
+article {
+    background-color: black;
+}
+
+@media screen and (max-width:600px) {
+    section {
+        flex-direction: column;
+    }
+}
